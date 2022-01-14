@@ -1,0 +1,82 @@
+Basics : 
+1. Reverse an array in javascript. 
+2. Swap alternate elements of an array : 
+	E.g : [1,2,3,4,5] => [2,1, 4, 3, 5]
+3. Find a substring in given string : 
+	E.g: “Trade on opinions” => 
+find “in”, => return true; 
+Find “stack” => return false; 
+
+
+Language basics: 
+Using a map, get square of every element of given array : 
+E.g [1,2,3,4]=> [1,4,9, 16]
+Filter all elements divisible by 2 in a given array: 
+Find index of a given element in the given array: 
+Convert [[1,2,3], [4,5,6], [7,8, 9]] => [1,2,3,4,5,6,7,8,9]
+GIven array : 
+[
+{
+	“event_id”: 111,
+“Prop” : “aaa”
+	
+},
+
+{
+	“event_id”: 222,
+“Prop” : “bbb”
+	
+},
+
+]
+          i.Convert this to a hashmap like structure, with event_id as key and prop as value: 
+	 		{ [111] => “aaa”, [222] => “bbb” } 
+         Ii. Convert this to a hashmap like structure with event_id as key and value of object as       value;
+6. Find some of all elements of given array using reduce. 
+
+
+Node basics : 
+1. Create a new project, start a server using node and express and create following apis : 
+	I. GET /file/id/1
+	II. PUT /file/property/1
+		{replace value of 1 with  {id : 1 , name : “exclamation”, symbol : “!”}}
+          III. PATCH /file/id/1
+		{replace value of symbol at 1 by #}
+         IV. DELETE /file/id/1
+  Create a file by name “symbols.json” with following initial values and run the API over this file : 
+	
+[
+{
+“Id” : 1,
+ Name : “exclamation”,
+Symbol : “!”
+
+
+
+},
+{
+“Id” : 2,
+ Name : “at_the_rate”,
+Symbol : “@”
+
+
+
+}, 
+
+{
+“Id” : 3,
+ Name : “hash”,
+Symbol : “#”
+
+
+
+}, 
+
+]
+	
+
+
+Create a blog for this : 
+2. Setup mysql in local, and create a database with name js_kt and create a table with name “symbols” with the structure as in the file above. 
+3. Now, create models in javascript and write the same apis on the table . 
+
